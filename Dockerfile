@@ -19,3 +19,8 @@ WORKDIR /app
 COPY pyproject.toml .
 
 RUN uv pip install --system -r pyproject.toml
+
+COPY Backend ./backend/
+COPY Frontend ./frontend/
+COPY fonts ./fonts/
+
