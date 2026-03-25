@@ -19,8 +19,8 @@ const logViewerBody = document.getElementById("logViewerBody");
 const logClearBtn = document.getElementById("logClearBtn");
 const backendHost = window.location.hostname || "localhost";
 const backendProtocol = window.location.protocol || "http:";
-const API_BASE_URL = `${backendProtocol}//${backendHost}:8080`;
-const API_FALLBACK_URL = `http://${backendHost}:8080`;
+const API_BASE_URL = `${backendProtocol}//${backendHost}`;
+const API_FALLBACK_URL = `http://${backendHost}`;
 
 let activeJobId = null;
 let pollHandle = null;
